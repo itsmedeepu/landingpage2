@@ -1,0 +1,236 @@
+body {
+  background: linear-gradient(230deg, violet, gold);
+  height: 100vh;
+  overflow: hidden;
+}
+.navbar {
+  background: transparent;
+}
+.navbar > .nav-links > ul > li {
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar > .nav-links > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 200ms;
+}
+
+.navbar > .nav-links > ul > li > a:hover {
+  border-bottom: 5px solid whitesmoke;
+}
+
+.search {
+  width: 400px;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid violet;
+  background: linear-gradient(130deg, rgb(243, 218, 76), rgb(240, 76, 240));
+  color: black;
+}
+
+.content-body {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.content-body > .content {
+  width: 700px;
+  margin-top: 30px;
+  position: relative;
+  animation: slideleft 1s linear forwards;
+}
+
+.content-body > .content > h2 {
+  font-weight: lighter;
+  margin: 5px;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(95, 4, 95);
+}
+.content-body > .content > h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  line-gap-override: none;
+  font-family: "Times New Roman", Times, serif;
+  margin: 5px;
+  color: rgb(95, 4, 95);
+}
+.content-body > .content > p {
+  padding: 10px;
+  line-height: 25px;
+  color: rgb(95, 4, 95);
+}
+
+.btn-ser {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(95, 4, 95);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn-ser,
+.reg:hover {
+  cursor: pointer;
+}
+
+.btn-ser .fa-long-arrow-alt-right {
+  color: white;
+}
+.btn-ser .sty1 {
+  color: white;
+
+  font-weight: bolder;
+}
+.content-body > .form {
+  width: 800px;
+  margin-left: 50px;
+}
+.content-body > .form > .card > form > .form-control {
+  margin-top: 20px;
+}
+.content-body > .form > .card {
+  background-color: white;
+  width: 320px;
+  height: 400px;
+  text-align: center;
+  padding: 10px 25px 10px 25px;
+  margin-left: 250px;
+  margin-top: 70px;
+  border-radius: 10px;
+  position: relative;
+  animation: slideright 1s linear;
+  transition: animation 0.5s;
+  box-shadow: 0px 0px 2px purple;
+}
+
+.content-body > .form > .card > form > .form-control > input {
+  width: 300px;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+  border-top: 2px solid violet;
+  border-left: 2px solid violet;
+  border-bottom: 2px solid lightblue;
+  border-right: 2px solid lightblue;
+  box-shadow: 0px 0px 5px violet;
+}
+
+.content-body > .form > .card > form > .form-control > input:focus {
+  outline: none;
+  border-top: 3px solid violet;
+  border-left: 3px solid violet;
+  border-bottom: 3px solid lightblue;
+  border-right: 3px solid lightblue;
+  box-shadow: 0px 0px 5px violet;
+}
+
+.terms {
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+}
+.terms .term1 {
+  font-weight: bolder;
+}
+
+.reg {
+  height: 40px;
+  width: 320px;
+  border-radius: 20px;
+  background-color: rgb(95, 4, 95);
+  color: white;
+  border: none;
+}
+
+.footer {
+  margin-top: 80px;
+}
+
+.footer > .social-links > .ico {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background-color: white;
+  text-align: center;
+  margin-left: 15px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: animation 2s;
+  position: relative;
+  animation: fall 5s linear forwards;
+}
+
+.footer > .social-links > .ico:hover {
+  cursor: pointer;
+  animation: zoomin 2s linear forwards;
+}
+
+.footer > .social-links > .ico > i {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.footer > .social-links {
+  margin-left: 90px;
+}
+
+.footer > .social-links > .ico:nth-child(1) {
+  color: blue;
+}
+.footer > .social-links > .ico:nth-child(2) {
+  color: lightskyblue;
+}
+.footer > .social-links > .ico:nth-child(3) {
+  color: red;
+}
+
+@keyframes zoomin {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes slideright {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes fall {
+  0% {
+    top: -800px;
+  }
+  25% {
+    top: -100px;
+    left: 300px;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+}
