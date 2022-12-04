@@ -33,6 +33,11 @@ body {
   color: black;
 }
 
+.icon {
+  position: relative;
+  left: -40px;
+  color: whitesmoke;
+}
 .content-body {
   display: flex;
   margin-left: 100px;
